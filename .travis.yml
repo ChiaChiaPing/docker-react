@@ -3,6 +3,10 @@ language: generic
 services:
   - docker
 
+branches:
+  only:
+    - main
+
 before_install:
   - docker build -t kevinchia/docker-react -f Dockerfile.dev .
 
